@@ -100,6 +100,10 @@ Vector * crearVector(int n) {
       printf("No hay suficiente espacio en la memoria\n"); exit(1);
   }
 
+  for(int i = 0; i < n ; i++){
+    registro[i].capacidad = 0;
+  }
+
    return registro;
 }
 
