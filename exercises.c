@@ -42,9 +42,8 @@ void sumaNultimos(int a[], int n, int m, int * suma) {
   printf("M  : %d\n", m);
   int posicionInicialDeSuma = n - m;
   printf("Posicion inicial de suma : %d\n", posicionInicialDeSuma);
-  printf("totalPosiciones a imprimir: %d \n", m);
   (*suma) = 0;
-  (*suma) = sumaN( &a[posicionInicialDeSuma], n);
+  (*suma) = sumaN( &a[posicionInicialDeSuma], (n - m));
       
   return;
 }
