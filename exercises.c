@@ -67,6 +67,9 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
       printf("No hay suficiente memoria para 'registroDePersona\n");
       exit(1);
   }
+  strcpy(registroDePersona->nombre, nombre);
+  strcpy(registroDePersona->rut, rut);
+  registroDePersona->edad = edad;
 
    return registroDePersona;
   
