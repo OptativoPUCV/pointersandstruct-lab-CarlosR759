@@ -24,7 +24,6 @@ int sumaN(int a[], int N) {
     int tot = 0;
 
     for(i = 0; i < N; i++) {
-      printf("numeros :%d ", a[i]);
       tot += a[i];
     }
 
@@ -39,10 +38,10 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-  printf("M  : %d\n", m);
   int posicionInicialDeSuma = n - m;
-  printf("Posicion inicial de suma : %d\n", posicionInicialDeSuma);
   (*suma) = 0;
+  //Se agrega 'm' a la función para   sumar 'm' veces partiendo desde  //
+  //a[posicionInicialDeSuma]                                          //
   (*suma) = sumaN( &a[posicionInicialDeSuma], m);
       
   return;
