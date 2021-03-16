@@ -94,7 +94,13 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   return NULL;
+  Vector *registro = (Vector *) malloc(n * sizeof(Vector) );
+
+  if(registro == NULL){
+      printf("No hay suficiente espacio en la memoria\n"); exit(1);
+  }
+
+   return registro;
 }
 
 /*
