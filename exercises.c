@@ -67,6 +67,8 @@ Persona* crearPersona(char nombre[], char rut[], int edad) {
       printf("No hay suficiente memoria para 'registroDePersona\n");
       exit(1);
   }
+
+  //Se guardan datos entregados por la función 'crearPersona'//
   strcpy(registroDePersona->nombre, nombre);
   strcpy(registroDePersona->rut, rut);
   registroDePersona->edad = edad;
@@ -114,6 +116,7 @@ la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
 
+    return;
 }
 
 /*
@@ -122,7 +125,10 @@ Programe la función int obtenerValor(Vector * v, int i),
 la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
-   return 0;
+  int resultado;
+  resultado = v->datos[i];
+
+   return resultado;;
 }
 
 /*
