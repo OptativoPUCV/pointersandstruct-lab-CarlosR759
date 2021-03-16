@@ -101,6 +101,11 @@ Vector * crearVector(int n) {
   }
 
   for(int i = 0; i < n ; i++){
+    registro[i].datos = (int *) calloc(n, sizeof(int) );
+    if(registro[i].datos == NULL){
+        printf("No hay suficiente espacio en la memoria\n"); exit(1);
+    }
+    
     registro[i].capacidad = 0;
   }
 
