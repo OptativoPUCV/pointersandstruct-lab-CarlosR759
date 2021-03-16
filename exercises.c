@@ -62,7 +62,22 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   return NULL;
+  /*Persona *registroDePersona = malloc(1 * sizeof(Persona));
+  if(registroDePersona == NULL){
+      printf("No hay suficiente memoria para 'registroDePersona\n");
+      exit(1);
+  }
+
+  scanf("%s", registroDePersona->nombre);
+  getchar();
+  scanf("%s", registroDePersona->rut);
+  getchar();
+  scanf("%d", &edad);
+  getchar();
+
+   return registroDePersona;
+  */
+  return NULL;
 }
 
 /*
