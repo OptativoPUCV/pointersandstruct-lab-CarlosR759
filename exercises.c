@@ -90,27 +90,19 @@ typedef struct {
    int capacidad; // capacidad del arreglo
 } Vector;
 
+//Profe: Solo debes crear 1 vector, y no un arreglo de vectores!
 Vector * crearVector(int n) {
-  Vector *registro = (Vector *) calloc(n, sizeof(Vector) );
-  int i, j;
-
-  if(registro == NULL){
-      printf("No hay suficiente espacio en la memoria\n"); exit(1);
-  }
-
-  for(i = 0; i < n ; i++){
-    registro[i].datos = (int *) calloc(n, sizeof(int) );
-    if(registro[i].datos == NULL){
+    Vector *arreglo = (Vector *) calloc(n, sizeof(Vector) );
+    if(arreglo == NULL){
         printf("No hay suficiente espacio en la memoria\n"); exit(1);
     }
-    //Se inicializa datos con ceros//
-    for(j = 0; j < n; j++){
-        registro[i].datos[j] = 0;
-    } 
-    registro[i].capacidad = 0;
-  }
+    
+    int i;
+    for( i = 0; i < n; i++){
+        arreglo[i].capacidad = 0;
+    }
 
-   return registro;
+    return arreglo;
 }
 
 /*
