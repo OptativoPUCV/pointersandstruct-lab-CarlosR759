@@ -93,6 +93,7 @@ typedef struct {
 Vector * crearVector(int n) {
   Vector *registro = (Vector *) calloc(n, sizeof(Vector) );
   int i, j;
+
   if(registro == NULL){
       printf("No hay suficiente espacio en la memoria\n"); exit(1);
   }
@@ -102,6 +103,7 @@ Vector * crearVector(int n) {
     if(registro[i].datos == NULL){
         printf("No hay suficiente espacio en la memoria\n"); exit(1);
     }
+    //Se inicializa datos con ceros//
     for(j = 0; j < n; j++){
         registro[i].datos[j] = 0;
     } 
