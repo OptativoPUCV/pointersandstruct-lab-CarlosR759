@@ -92,17 +92,19 @@ typedef struct {
 
 Vector * crearVector(int n) {
   Vector *registro = (Vector *) calloc(n, sizeof(Vector) );
-
+  int i, j;
   if(registro == NULL){
       printf("No hay suficiente espacio en la memoria\n"); exit(1);
   }
 
-  for(int i = 0; i < n ; i++){
+  for(i = 0; i < n ; i++){
     registro[i].datos = (int *) calloc(n, sizeof(int) );
     if(registro[i].datos == NULL){
         printf("No hay suficiente espacio en la memoria\n"); exit(1);
     }
-    
+    for(j = 0; j < n; j++){
+        registro[i].datos[j] = 0;
+    } 
     registro[i].capacidad = 0;
   }
 
@@ -115,7 +117,6 @@ Programe la función void asignarValor(Vector * v, int i, int valor),
 la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
-
     return;
 }
 
