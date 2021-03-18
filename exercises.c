@@ -102,6 +102,8 @@ Vector * crearVector(int n) {
         printf("No hay suficiente espacio en la memoria\n"); exit(1);
 
     }
+
+    //Te faltaba esto :D
     arreglo->capacidad = n;
 
     return arreglo;
