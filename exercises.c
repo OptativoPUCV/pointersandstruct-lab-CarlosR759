@@ -105,7 +105,8 @@ Vector * crearVector(int n) {
 
     //Te faltaba esto :D
     arreglo->capacidad = n;
-
+    //Gracias Daniel Ignacio <3 <3 //
+    
     return arreglo;
 }
 
@@ -155,8 +156,8 @@ void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
     int sumaX = a1 + b1;
     int sumaY = a2 + b2;
 
-    c->datos[0] = sumaX;
-    c->datos[1] = sumaY;
+    asignarValor(c, 0, sumaX);
+    asignarValor(c, 1, sumaY);
 
     return;
 }
